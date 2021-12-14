@@ -129,3 +129,23 @@ nav a:hover::before{
 
 /*----------------------------------------------PRODUCTS START HERE--------------------------------------*/
 
+.hero-products{
+    position: relative;
+    height: 60vh;
+    overflow: hidden;
+    background: url(images/hero3.jpeg) no-repeat center;
+    background-size: cover;
+}
+
+.hero-products h2{
+    position: absolute;
+    text-shadow: 2px 2px 5px black;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    font-size: 5rem;
+    text-transform: uppercase;
+}
