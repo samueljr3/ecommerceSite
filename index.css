@@ -149,3 +149,16 @@ nav a:hover::before{
     font-size: 5rem;
     text-transform: uppercase;
 }
+main{
+    text-align: center;
+}
+.product-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+.product-grid img{
+    width: 50%;
+    border-style: solid;
+}
