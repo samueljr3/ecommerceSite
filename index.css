@@ -137,7 +137,7 @@ nav a:hover::before{
     background-size: cover;
 }
 
-.hero-products h2{
+.hero-products h1{
     position: absolute;
     text-shadow: 2px 2px 5px black;
     top:50%;
@@ -161,4 +161,54 @@ main{
 .product-grid img{
     width: 50%;
     border-style: solid;
+}
+
+
+/*----------------------------------------------CONTACT US START HERE--------------------------------------*/
+
+.contact-main{
+    background: url(images/aboutImage.jpeg) no-repeat;
+    background-size: cover;
+    
+}
+.contact-container{
+    width: 85%;
+    max-width: 600px;
+    background: #FDF0D5;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px 40px;
+    
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 20px #000000b3;
+}
+
+.contact-container h1{
+    margin-top: 0;   
+}
+
+.contact-input{
+    border: 1px solid grey;
+    margin: 8px 0;
+    padding: 12px 18px;
+    border-radius: 8px;
+    background: white;
+}
+
+.contact-input label{
+    display: block;
+    text-align: left;
+
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.contact-input input, .contact-input textarea{
+    width: 100%;
+    border:none;
+    font-size: 18px;
+    margin-top: 6px;
 }
