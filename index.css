@@ -163,6 +163,15 @@ main{
     border-style: solid;
 }
 
+.product-grid figure{
+    width: 80%;
+    margin: 2em;
+}
+.product-grid figcaption{
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
 
 /*----------------------------------------------CONTACT US START HERE--------------------------------------*/
 
