@@ -181,7 +181,11 @@ footer ul li a:hover {
 }
 .index-main aside{
     padding: 0 3rem 0rem 3rem;
+}
 
+#index-bio{
+    margin-top: 1em;
+    font-size: 1.5em;
 }
 /*----------------------------------------------PRODUCTS START HERE--------------------------------------*/
 
