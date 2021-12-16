@@ -32,6 +32,10 @@ header::after{
     
 }
 
+main{
+    text-align: center;
+}
+
 nav{
     float: right;
 }
@@ -79,6 +83,50 @@ nav a:hover::before{
     width:100%;
 }
 
+/* Footer Code */
+footer {
+    left: 0; 
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    min-height: 30px;
+    padding: 20px;
+    text-decoration: none;
+    margin-top: 0em;
+    background-color: #003049;
+}
+  
+footer .copyright {
+    display: flex;
+    justify-content: center;
+    font-size: .5em;
+    margin-top: 10px;
+    color: #FDF0D5;
+}
+  
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+  
+footer ul li {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+}
+  
+footer ul li a {
+    color: #FDF0D5;
+}
+  
+footer ul li a:hover {
+    
+    color: #C1121F;
+}
+
+
 /*Index Hero CSS*/
 .hero-image{
     position: relative;
@@ -103,31 +151,40 @@ nav a:hover::before{
 }
 
 /*Index Main*/
-.index-main{
-    margin-top: 2rem;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    text-align: center;
-}
 
 .sale-background{
     background-color: #003049;
     color: #FDF0D5;
     border-radius: 20px;
+    height:100%;
 }
-.sale-background h3{
-    padding-bottom: 2rem;
+.sale-background figcaption{
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.sale-background p{
+    padding-bottom: 3rem;
+}
+
+.index-main{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
 }
 .index-main img{
     margin-top: 2rem;
-     width:50%;
+    width:50%;
+    border-radius: 10px;
 }
 .index-main aside{
-    border-style: solid;
-    padding: 0 2rem 0rem 2rem
-}
+    padding: 0 3rem 0rem 3rem;
 
+}
 /*----------------------------------------------PRODUCTS START HERE--------------------------------------*/
+
 
 .hero-products{
     position: relative;
@@ -149,9 +206,11 @@ nav a:hover::before{
     font-size: 5rem;
     text-transform: uppercase;
 }
-main{
-    text-align: center;
+
+#product-main{
+    margin-bottom: 2em;
 }
+
 .product-grid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -172,6 +231,7 @@ main{
     border-radius: 8px;
     padding: 1rem;
     color: white;
+    height:90%;
 }
 
 .product-grid figcaption{
@@ -179,18 +239,23 @@ main{
     margin-bottom: 1em;
 }
 
+.product-title{
+    margin-top: 2rem;
+}
 
 /*----------------------------------------------CONTACT US START HERE--------------------------------------*/
 
 .contact-main{
     background: url(images/aboutImage.jpeg) no-repeat;
+    background-position: center;
     background-size: cover;
-    
+    width: 100%;
+    height: 100vh;
 }
 .contact-container{
     width: 85%;
     max-width: 600px;
-    background: #FDF0D5;
+    background: rgb(253,240,213, .9);
     position: absolute;
     top:50%;
     left: 50%;
@@ -227,4 +292,50 @@ main{
     border:none;
     font-size: 18px;
     margin-top: 6px;
+}
+
+@media (max-width: 800px){
+    nav a{
+        font-size:20px;
+    }
+
+    footer .copyright {
+        font-size: 1em;
+    }
+    i{
+        font-size: 2.5em;
+        padding: 0 .5em 0 .5em;
+    }
+
+    /*---Home page CSS-----*/
+    .index-main aside {
+        padding: 0 1.5rem 0rem 1.5rem;
+    }
+
+    /*-------Product CSS------*/
+    .product-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-grid figcaption{
+        font-size: 1.5em;
+    }
+    .product-grid p{
+        font-size: 1.3em;
+    }
+
+    /*------Contact CSS------*/
+    .contact-container{
+        top:60%;
+        left: 50%;
+        padding: 60px 40px;
+    }
+
+    .contact-input{
+        border: 1px solid grey;
+        margin: 8px 0;
+        padding: 12px 18px;
+        border-radius: 8px;
+        background: white;
+    }
 }
