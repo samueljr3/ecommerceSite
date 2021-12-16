@@ -228,7 +228,7 @@ footer ul li a:hover {
     padding: 1rem;
 }
 
-.product-grid figure{
+.product-grid .product-card{
     width: 80%;
     margin: 2em;
     background-color: #2B2D42;
