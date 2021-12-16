@@ -180,7 +180,7 @@ footer ul li a:hover {
     border-radius: 10px;
 }
 .index-main aside{
-    padding: 0 3rem 0rem 3rem;
+    margin: 0 3rem 0rem 3rem;
 }
 
 #index-bio{
@@ -314,6 +314,10 @@ footer ul li a:hover {
     /*---Home page CSS-----*/
     .index-main aside {
         padding: 0 1.5rem 0rem 1.5rem;
+    }
+    .index-main img{
+        width:95%;
+        margin-bottom: 3rem;
     }
 
     /*-------Product CSS------*/
