@@ -247,6 +247,14 @@ footer ul li a:hover {
     margin-top: 2rem;
 }
 
+.product-button{
+    margin-top: 2em;
+    padding: .6em;
+    background-color: #FDF0D5;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 /*----------------------------------------------CONTACT US START HERE--------------------------------------*/
 
 .contact-main{
@@ -298,6 +306,22 @@ footer ul li a:hover {
     margin-top: 6px;
 }
 
+.contact-button{
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    margin-top: 1em;
+    width: 80%;
+    height:3em;
+    background-color: #003049;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.contact-button:hover{
+    text-shadow: 0px 0px 3px white, 0 0 5px white;
+}
+
 @media (max-width: 800px){
     nav a{
         font-size:20px;
@@ -312,14 +336,17 @@ footer ul li a:hover {
     }
 
     /*---Home page CSS-----*/
+    
     .index-main aside {
         padding: 0 1.5rem 0rem 1.5rem;
     }
+
     .index-main img{
         width:95%;
         margin-bottom: 3rem;
     }
 
+    
     /*-------Product CSS------*/
     .product-grid{
         grid-template-columns: repeat(2, 1fr);
@@ -331,12 +358,17 @@ footer ul li a:hover {
     .product-grid p{
         font-size: 1.3em;
     }
+    .product-button{
+        width:60%;
+        height:3em;
+        font-size: 1.2em;
+    }
 
     /*------Contact CSS------*/
     .contact-container{
         top:60%;
         left: 50%;
-        padding: 60px 40px;
+        padding: 60px 40px 45px 40px;
     }
 
     .contact-input{
@@ -345,5 +377,9 @@ footer ul li a:hover {
         padding: 12px 18px;
         border-radius: 8px;
         background: white;
+    }
+    .contact-button{
+        margin-top: 2em;
+        height:5em;
     }
 }
